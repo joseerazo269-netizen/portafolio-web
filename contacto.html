@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Jose Montenegro</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contacto">
+
+    <!-- Encabezado y Navegación -->
+    <header class="main-header">
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal Contacto -->
+    <main class="contact-container">
+        <section class="contact-card">
+            <h1 class="contact-title">HABLEMOS</h1>
+            <p class="contact-description">
+                ¿Tienes una idea en mente? Me encantaría conocerla. Estoy abierto a nuevos proyectos, propuestas creativas y colaboraciones donde el diseño se convierta en una forma de comunicar y crear algo único.
+            </p>
+            <a href="mailto:joseerazo269@gmail.com" class="contact-email">joseerazo269@gmail.com</a>
+
+            <!-- Formulario interactivo adicional para envío -->
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="4" placeholder="Tu Mensaje" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Script principal JS -->
+    <script src="script.js"></script>
+</body>
+</html>
